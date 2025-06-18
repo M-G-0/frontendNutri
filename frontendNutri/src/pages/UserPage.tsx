@@ -1,4 +1,3 @@
-// src/pages/UserPage.tsx
 import type { PageProps } from '../types';
 
 export function UserPage({ setCurrentPage }: PageProps) {
@@ -25,8 +24,17 @@ export function UserPage({ setCurrentPage }: PageProps) {
 
       <div className="bg-white rounded-lg shadow-md p-6">
         <h1 className="text-2xl font-bold mb-4">Perfil de Usuario</h1>
-        {/* Aquí irá el contenido del perfil de usuario */}
+        <div className="space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Nombre</label>
+            <input type="text" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+} 
